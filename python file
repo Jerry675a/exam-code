@@ -1,0 +1,116 @@
+
+#This is an exam code that presents questions and when promted to anserwer 
+#said math questions by the user, the results are tallied and markes given over 10 and in
+#percentaages
+
+
+correct_answer=[]
+wrong_answer=[]
+
+
+def myanswera():
+    answer=["a","b","c"]
+    responds=input("answer:")
+    if responds== answer[0]:
+        correct_answer.append(responds)
+    else:
+        wrong_answer.append(responds)
+
+
+
+
+def myanswerb():
+    answer=["a","b","c"]
+    responds=input("answer:")
+    if responds== answer[1]:
+        correct_answer.append(responds)
+    else:
+        wrong_answer.append(responds)
+
+
+
+
+
+
+
+def myanswerc():
+    answer=["a","b","c"]
+    responds=input("answer:")
+    if responds== answer[2]:
+        correct_answer.append(responds)
+    else:
+        wrong_answer.append(responds)
+
+
+#The answers are either myanswera(),myanswerb() or myanswerc()
+
+
+print("Answer all questions by selecting , a b or c and then press enter ")
+
+correct_answer=[]
+wrong_answer=[]
+
+while True:
+    print("1.what is 33+4")
+    print("a.35 b.45 c.37")
+    answer=["a","b","c"]
+    myanswerc()
+    
+    print("2.what is 40-32")
+    print("a.2","b. 5","c.8")
+    answer=["a","b","c"]
+    myanswerc()
+
+    print("3.what is 32 * 4")
+    print("a.182 b.128 c.821")
+    answer=["a","b","c"]
+    myanswerb()
+    
+    
+
+    print("4.what is 6*7")
+    print("a.42 b.24 c.72")
+    answer=["a","b","c"]
+    myanswera()
+
+    print("5.what is 6*10")
+    print("a.42 b.24 c.60")
+    answer=["a","b","c"]
+    myanswerc()
+
+    print("6.what is 5*7")
+    print("a.42 b.35 c.72")
+    answer=["a","b","c"]
+    myanswerb()
+
+
+    print("7.what is 8* 10")
+    print("a.80 b.24 c.72")
+    answer=["a","b","c"]
+    myanswera()
+
+    print("8.what is 10 + 5")
+    print("a.15 b.24 c.82")
+    answer=["a","b","c"]
+    myanswera()
+
+
+    print("9.what is 34+ 6")
+    print("a.42 b.40 c.72")
+    answer=["a","b","c"]
+    myanswerb()
+
+
+    print("10.what is 9*10")
+    print("a.42 b.24 c.90")
+    answer=["a","b","c"]
+    myanswerc()
+    
+    break
+
+print("you had",len(correct_answer), "correct")
+print ("You had ", len(wrong_answer),"wrong")
+
+total_percentage= len(correct_answer)/10 * 100
+
+print("In total you had ", total_percentage,"%")
